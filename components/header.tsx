@@ -11,6 +11,10 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className='fixed inset-x-0 top-0 z-50 bg-background/75 py-6 backdrop-blur-sm'>
       <nav className='container mx-auto px-4 sm:px-6 lg:px-8'>
@@ -53,16 +57,16 @@ export default function Header() {
         {isMenuOpen && (
           <ul className='md:hidden mt-4 flex flex-col gap-4 text-xl font-light text-muted-foreground'>
             <li className='transition-colors hover:text-foreground'>
-              <Link href='/projects'>Projects</Link>
+              <Link href='/projects' onClick={closeMenu}>Projects</Link>
             </li>
             <li className='transition-colors hover:text-foreground'>
-              <Link href='/posts'>Blog</Link>
+              <Link href='/posts' onClick={closeMenu}>Blog</Link>
             </li>
             <li className='transition-colors hover:text-foreground'>
-              <Link href='/about'>About</Link>
+              <Link href='/about' onClick={closeMenu}>About</Link>
             </li>
             <li className='transition-colors hover:text-foreground'>
-              <Link href='/cv/curriculum.pdf'>Resume</Link>
+              <Link href='/cv/curriculum.pdf' onClick={closeMenu}>Resume</Link>
             </li>
           </ul>
         )}
