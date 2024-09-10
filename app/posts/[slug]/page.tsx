@@ -2,7 +2,6 @@ import MDXContent from '@/components/mdx-content';
 import { getPostBySLug, getPosts } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
 import { ArrowLeftIcon } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import React from 'react';
@@ -13,8 +12,6 @@ export async function generateStaticParams() {
 
     return slugs
 }
-
-
 
 
 export default async function Post({ params }: { params: { slug: string } }) {
@@ -39,17 +36,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
                     <ArrowLeftIcon className="w-5 h-5" />
                     <span>Back to posts</span>
                 </Link>
-
-                {image && (
-                    <div className="relative mb-6 h-96 w-full overflow-hidden rounded-lg">
-                        <Image
-                            src={'/posts/m.jpg'}
-                            alt={''} // Adicione um alt significativo para acessibilidade
-                            className="object-cover"
-                            fill
-                        />
-                    </div>
-                )}
 
                 <header>
                     <h1 className="title">{title}</h1>
