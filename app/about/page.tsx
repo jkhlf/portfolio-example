@@ -15,18 +15,11 @@ export default function AboutPage() {
 
       <div className="text-center">
         <p className="py-2 sm:py-4 text-base sm:text-lg">
-          Sou um engenheiro de software, gosto de criar coisas que possam ajudar tanto o meu dia a dia quanto de outras pessoas. Atualmente, estou cursando graduação em sistemas de internet na
-          Fatec Rubens Lara, Brasil.
-        </p>
+        As a software engineer and Internet Systems student at Fatec Rubens Lara - BS, I build innovative tools and solutions that simplify daily tasks and improve people's lives, constantly learning and applying new technologies to create meaningful results.    </p>
         <p className="py-2 text-base sm:text-lg">
-          Gosto de academia, música, anime e café (bastante café). Sou uma pessoa simples, não espero muito de mim, mas vejo meu valor.
-        </p>
+          I like the gym, music, anime and coffee (lots of coffee). I'm a simple person, I don't expect much from myself, but I see my value.        </p>
         <p className="py-2 sm:py-4 text-base sm:text-lg">
-          Obrigado por visitar!
-          Espero que tenha gostado do que viu.
-          Sinta-se à vontade para entrar em contato a qualquer momento.
-          Vamos criar algo!
-        </p>
+          Feel free to contact me at any time.        </p>
       </div>
     </article>
   );
