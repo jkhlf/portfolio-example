@@ -1,18 +1,24 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Provider from "@/components/provider";
-import Header from "@/components/header";
-import { cn } from "@/lib/utils";
-import Footer from "@/components/footer";
+import Provider from "@/app/content/provider";
+import Footer from "@/app/components/footer";
+import { Navbar } from "@/app/components/nav";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Khlf Blog",
-  description: "Personal Blog/Portfolio",
-};
-
+  title: {
+    default: 'Khlf Blog',
+    template: '%s | Khlhf Blog',
+  },
+  description: 'Todos os meus links importantes em um só lugar. Engenheiro de Software, estudante da Fatec e apaixonado por tecnologia.',
+  openGraph: {
+    title: 'Khlf Blog',
+    description: 'Encontre todos os meus links e redes sociais em um só lugar',
+    siteName: 'Khlf Blog',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+}
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,10 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn('flex min-h-screen flex-col font-sans antialiased', montserrat.className)}>
+      <body className='antialiased max-w-2xl mt-8 lg:mx-auto'>
         <Provider>
-        <Header />
-        <main className="grow">
+        <Navbar />
+        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           {children}
         </main>
         <Footer />
