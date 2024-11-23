@@ -55,7 +55,7 @@ export default function Page() {
       </div>
     </section>
 
-      <div className=" text-gray-200">
+      <div>
 
         {/* Social Links */}
         <div className="space-y-5">
@@ -63,7 +63,7 @@ export default function Page() {
             <a
               key={index}
               href={link.url}
-              className="flex items-center justify-between w-full p-3 border border-gray-800 rounded hover:bg-gray-800/50 transition-colors"
+              className="flex items-center justify-between w-full p-3 border border-gray-800 rounded hover:bg-gray-400/50 transition-colors"
             >
               <div className="flex items-center gap-3">
                 {link.icon}

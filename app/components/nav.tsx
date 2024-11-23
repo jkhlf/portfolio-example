@@ -42,7 +42,7 @@ export function Navbar() {
               );
             })}
 
-            {/* <ThemeToggle /> */}
+          <ThemeToggle /> 
           </div>
         </nav>
       </div>
