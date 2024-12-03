@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col mb-24">
             <a
-              href="/cv/curriculum.pdf" target="_blank"
+              href="/cv/Curriculo.pdf" target="_blank"
               className="bg-zinc-950 border solid border-b-inherit p-3 text-zinc-100 flex items-center gap-4 hover:bg-zinc-700 transition-all active:tranzinc-y-1 mt-16"
             >
               Download my CV
