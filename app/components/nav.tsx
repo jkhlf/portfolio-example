@@ -22,7 +22,7 @@ export function Navbar() {
           <div className="flex items-center w-full">
             <div className="text-lg font-bold">
               <Link href="/">
-                <p className='text-[21px]'> Khalaf <span className='text-3xl text-blue-500'>.</span></p>
+                <p className='text-[21px]'> Your name</p>
               </Link>
             </div>
           </div>

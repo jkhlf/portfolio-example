@@ -1,5 +1,4 @@
-import { Github, Linkedin, } from 'lucide-react';
-
+import { Github, Linkedin } from 'lucide-react';
 
 const XLogo = () => {
   return (
@@ -19,44 +18,43 @@ export default function Page() {
     {
       title: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      url: "https://www.linkedin.com/in/joaokhalaf/"
+      url: "https://www.linkedin.com"
     },
     {
       title: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      url: "https://github.com/jkhlf"
+      url: "https://github.com"
     },
     {
       title: "X (Twitter)",
       icon: <XLogo />,
-      url: "https://x.com/kh4lf_"
+      url: "https://x.com"
     }
   ];
 
   const navLinks = [
-    { title: "/projects", },
-    { title: "/about", }
+    { title: "/projects" },
+    { title: "/about" }
   ];
 
   return (
-
-    <><section>
-      <div className="flex items-center justify-between pb-5">
-        <div className="flex items-center">
-          <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
-          Hello, I'm a Software Engineer         
-       </h1>
+    <>
+      <section>
+        <div className="flex items-center justify-between pb-5">
+          <div className="flex items-center">
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
+              Example Title
+            </h1>
+          </div>
         </div>
-      </div>
-      <div className="pb-10">
-        <p className="text-gray-600 dark:text-gray-400">
-        Student at Fatec RL - Sistemas para Internet, Fullstack Developer, sometimes acting as Backend Developer and sometimes Data Analyst (only studying for now).       
-       </p>
-      </div>
-    </section>
+        <div className="pb-10">
+          <p className="text-gray-600 dark:text-gray-400">
+            Example description text goes here.
+          </p>
+        </div>
+      </section>
 
       <div>
-
         {/* Social Links */}
         <div className="space-y-5">
           {socialLinks.map((link, index) => (
@@ -84,6 +82,7 @@ export default function Page() {
             </a>
           ))}
         </div>
-      </div></>
+      </div>
+    </>
   );
-};
+}
